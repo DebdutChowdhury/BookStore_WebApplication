@@ -2,7 +2,6 @@ import React from 'react';
 import '../CSS/Login.css';
 import { TextField, makeStyles, Button, InputAdornment, Input } from '@material-ui/core';
 import { Visibility, VisibilityOff } from '@material-ui/icons';
-// import clsx from 'clsx';
 import UserService from '../Services/UserService';
 import { withRouter } from 'react-router';
 
@@ -59,8 +58,6 @@ class Login extends React.Component {
             valid = false;
         }
 
-
-
         return valid;
 
     }
@@ -82,19 +79,11 @@ class Login extends React.Component {
             }
             console.log(data);
             service.userlogin(data).then((res) => {
-                console.log(res.data.result);
-                // localStorage.setItem('Token', res.data.result.accessToken);
-                // localStorage.setItem('Token', result.data.result.id);
-                // localStorage.setItem('FullName', res.data.result.fullName);
-                // localStorage.setItem('Email', res.data.result.email);
-                // localStorage.setItem('Password', res.data.result.password);
-                // localStorage.setItem('Phone', res.data.result.phone);
-                // console.log(localStorage.getItem('Token'));
-                // this.props.history.push('/userdashboard');
+                console.log(res.data);
+                localStorage.setItem('Token', res.data.result.accessToken);
             }).catch((error) => {
                 console.log(error);
             })
-
         }
     }
 
