@@ -114,17 +114,6 @@ export default class LoginPart extends React.Component {
             })
         }
     }
-    Login = () => {
-        let data = {
-            "email": "",
-            "password": ""
-        }
-        service.userlogin(data).then((result) => {
-            console.log(result);
-        }).catch((error) => {
-            console.log(error);
-        })
-    }
 
     changeVisibility = () => {
         this.setState({ visibility: !this.state.visibility });
