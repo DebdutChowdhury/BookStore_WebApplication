@@ -1,24 +1,20 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Signup from './Pages/Signup';
+import Router from "./Router/Router"
+import { Provider } from 'react-redux'
+import Store from "./Store";
+import store from './Store';
 
+store.subscribe(()=>console.log("see store",store.getState()))
 
 function App() {
-  const Routing = () => {
-    return (
-      <Router>
-        <div>
-          <Switch>
-            <Route exact path="/" component={Signup} ></Route>
-          </Switch>
-        </div>
-      </Router>)
-  }
   return (
     <>
-      <Routing />
+    <Provider store={Store}>
+      <Router/>
+      </Provider>
     </>
   );
 }
 
 export default App;
+
