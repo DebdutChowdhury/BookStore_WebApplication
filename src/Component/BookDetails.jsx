@@ -213,7 +213,7 @@ class BookDeatail extends Component {
                             {" "}
                             <hr></hr>
                         </div>
-                        <div className="customer-feedback-container-">
+                        <div className="customer-feedback-container">
                             <span className="feedback">Customer Feedback</span>
                                 <CustomerFeedback/>
                         </div>

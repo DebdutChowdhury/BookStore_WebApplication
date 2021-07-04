@@ -203,6 +203,7 @@
 .price{
     font-family: 'Roboto', sans-serif;
     color : grey;
+    margin-top: 8px;
 }
 
 .horizoantalline{
@@ -268,6 +269,7 @@
     font-weight: 700;
     margin-top: 10px;
   /* margin-top: 10px; */
+    margin-left: 1%;
 }
 
 .reviews{

@@ -143,10 +143,12 @@ class BookDisplay extends Component {
                 <div className="usercontent">
                     <div className="inlineheader">
                         <div className="headers">
-                            Books
+                            Books 
+                            <span> ({this.props.search ? <span>{this.props.newSearchBook.length}</span>:<span>{this.state._books.length}</span>}items)</span>
+                            
                         </div>
                         <div className="select">
-                            <select style={{ width: '157px', height: '47px' }} onChange={(e) => this.sort(e)} >
+                            <select style={{ width: '140px', height: '40px' }} onChange={(e) => this.sort(e)} >
                                 <option selected >Sort by relevance</option>
                                 <option value="dsec" >Price: high to low</option>
                                 <option value="asec"  >Price: low to high</option>

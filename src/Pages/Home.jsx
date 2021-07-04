@@ -1,13 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component , Profiler} from 'react'
 import BookDetails from '../Component/BookDetails';
 import BookDisplay from '../Component/BookDisplay'
-// import Footer from '../Component/Footer'
+import Footer from '../Component/Footer'
 import Header from "../Component/Header"
 import MyCartBag from '../Component/MyCartBag';
 import { withRouter } from 'react-router';
 import BookServices from '../Services/BookService';
 import { connect } from 'react-redux';
 import { BOOK_SELECTED, CART_BOOKS, CART_DETAILS } from '../Constants';
+import { TimerSharp } from '@material-ui/icons';
 
 const mapStateToProps = (state) => {
     console.log("state",state.state.bookDetails);
@@ -111,11 +112,23 @@ class Home extends Component {
         this.getCartBook()
     }
 
+    filer = (id,phase,actualDuration,baseDuration,startTime,commitTime,interactions) => {
+        console.log(`${id}`)
+        console.log(` phase:${phase}`);
+        console.log(`Actual time: ${actualDuration}`);
+        console.log(`Base time: ${baseDuration}`);
+        console.log(`Start time: ${startTime}`);
+        console.log(`Commit time: ${commitTime}`);
+        console.log(`Interactions: ${interactions}`);
+    }
+
 render() {
     // console.log(this.state.newSearchData);
     return (
         <div>
+        <Profiler id="header" onRender={this.filer}>
             <Header searchData={this.searchData} openCart={this.openCart} getCartBook={this.state._cartbooks.length}/>
+        </Profiler>
             {/* {this.state.selectedBook ? <BookDetails displayBookDetails={this.state.selectedBook} />
                 : <BookDisplay
                     selectedBook={this.selectedBook}
@@ -133,7 +146,7 @@ render() {
             {/* for search things */}
             {/* {this.state.searchView != "" ? this.searchRendering(this.state.newSearchData): this.rendering()}   */}
 
-            {/* <Footer/> */}
+            <Footer/>
         </div>
     )
 }

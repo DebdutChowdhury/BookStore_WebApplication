@@ -78,3 +78,41 @@
 .book{
     margin-top: 4px;
 }
+
+@media screen and (max-width: 360px){
+   .appbar{
+       width: 100%;
+   }
+    .appbar div{
+        padding: 12px;
+    }
+    .input input {
+        width: 50%;
+    }
+    .appbar .book{
+        display: none;
+    }
+}
+@media screen and (max-width: 530px){
+    .appbar{
+        width: 100%;
+    }
+    .appbar div{
+        padding: 12px;
+    }
+    .input input {
+        width: 50%;
+    }
+    .appbar .book{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+  
+    .appbar .input{
+        width: auto;
+    }
+    .input input {
+        width: 50%;
+    }
+}

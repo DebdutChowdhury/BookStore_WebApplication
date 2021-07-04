@@ -6,12 +6,14 @@ import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
 import Badge from '@material-ui/core/Badge';
 import { BrowserRouter as Router, Route, Link, Navlink, Switch, BrowserRouter, Redirect } from 'react-router-dom';
+import ProfilePopper from './ProfilePopper'
 
 export default class Header extends Component {
   constructor(props){
     super(props);
     this.state= {
-      getCartAllBook:[]
+      getCartAllBook:[],
+      openProfilePopper:false
     }
   }
 
@@ -29,6 +31,7 @@ export default class Header extends Component {
   //   this.setState({getCartAllBook:value})
   // }
 
+
   render() {
     return (
       <>
@@ -43,8 +46,8 @@ export default class Header extends Component {
             </div>
           </div>
           <div>
-            <div className="pro">
-              <PermIdentityIcon className="proicon" />
+            <div className="pro" style={{cursor:"pointer"}} >
+              <ProfilePopper />
               Profile
             </div>
             <div className="cart">

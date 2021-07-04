@@ -1,11 +1,10 @@
-import { BOOK_SELECTED } from "../Constants";
-import { CART_BOOKS } from "../Constants";
-import { CART_DETAILS } from "../Constants";
+import { BOOK_SELECTED, CART_BOOKS, CART_DETAILS, SEARCH_ICON} from "../Constants";
 
 const initialState = {
     bookDetails: [],
     cartCount: '',
-    cartOpen:false
+    cartOpen:false,
+    openSearch:false
 }
 
 const BookDetailsReducers = (state = initialState, action) => {
@@ -25,6 +24,11 @@ const BookDetailsReducers = (state = initialState, action) => {
             console.log("Action", action);
             return {
                 ...state, cartOpen: action.value
+            }
+        case SEARCH_ICON:
+            console.log("Action", action);
+            return {
+                ...state, openSearch: action.value
             }
 
         default:

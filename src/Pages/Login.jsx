@@ -104,7 +104,7 @@ class Login extends React.Component {
             console.log(data);
             this.handleToggle()
             service.userlogin(data).then((res) => {
-                console.log(res.data);
+                console.log(res);
                 localStorage.setItem('Token', res.data.result.accessToken);
                 this.setState({ snackType: "success", snackMessage: "Login successful", open: true, setOpen: true })
                 this.handleClose()
