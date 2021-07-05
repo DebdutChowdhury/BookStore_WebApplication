@@ -158,7 +158,7 @@
     font-weight: 400;
 }
 .card-rating{
-    width : 50%;
+    width : 90%;
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -187,7 +187,7 @@
     display: flex;
     flex-direction: row;
     width : 29%;
-   
+    margin-top: 2%;
     align-items: center;
     justify-content: space-around;
     font-family: 'Roboto', sans-serif;
@@ -334,4 +334,204 @@
 
 .customer-feedback-container{
     margin-left: 10px;
+}
+
+@media screen and (max-width:360px){
+    .mainContainer{
+        width: 100%;
+        flex-direction: column;
+        margin-left: 27%;
+    }
+    .container{
+        width: 65%;
+        padding: 0;
+        margin-left: -2%;
+    }
+    .twoimg-comtainer{
+        display: none;
+    }
+    .wishlist{
+        width: 85%;
+        margin-left: -5px;
+    }
+    .details{
+        width: 100%;
+        margin-top: 15%;
+    }
+    .bookdetail{
+        width: 100%;
+    }
+    .author{
+        margin-left: -5px;
+    }
+    .card-rating{
+        margin-left: -5px;
+        margin-top: 1%;
+        width: 78%;
+    }
+    .card-price{
+        margin-top: 1%;
+    }
+    .horizoantalline{
+        margin-left: -50%;
+        margin-top: 5%;
+        /* width: 104%; */
+        padding: 4%;
+    }
+    .desc-book{
+        margin-top: 10%;
+        margin-left: -39%;
+    }
+    .desc-title{
+        width: 33%;
+        margin-bottom: 7%;
+    }
+    .lorem{
+        margin-bottom: 7%;
+    }
+    .customer-feedback-container{
+        margin-left: 0;
+        margin-right: 32%;
+    }
+    .rating-stars-container{
+        margin-top: 2%;
+    }
+    .submit-button-container-feedback{
+        margin-left: 209px;
+    }
+    .textarea-actual-cutomerfeedback{
+        margin-top: 3%;
+    }
+}
+@media screen and (max-width:530px){
+    .mainContainer{
+        width: 100%;
+        flex-direction: column;
+        margin-left: 27%;
+    }
+    .container{
+        width: 65%;
+        padding: 0;
+        margin-left: -2%;
+    }
+    .twoimg-comtainer{
+        display: none;
+    }
+    .wishlist{
+        width: 85%;
+        margin-left: -5px;
+    }
+    .details{
+        width: 100%;
+        margin-top: 15%;
+    }
+    .bookdetail{
+        width: 100%;
+    }
+    .author{
+        margin-left: -5px;
+    }
+    .card-rating{
+        margin-left: -5px;
+        margin-top: 1%;
+        width: 78%;
+    }
+    .card-price{
+        margin-top: 1%;
+    }
+    .horizoantalline{
+        margin-left: -50%;
+        margin-top: 5%;
+        /* width: 104%; */
+        padding: 4%;
+    }
+    .desc-book{
+        margin-top: 10%;
+        margin-left: -39%;
+    }
+    .desc-title{
+        width: 33%;
+        margin-bottom: 7%;
+    }
+    .lorem{
+        margin-bottom: 7%;
+    }
+    .customer-feedback-container{
+        margin-left: 0;
+        margin-right: 32%;
+    }
+    .rating-stars-container{
+        margin-top: 2%;
+    }
+    .submit-button-container-feedback{
+        margin-left: 209px;
+    }
+    .textarea-actual-cutomerfeedback{
+        margin-top: 3%;
+    }
+}
+@media screen and (max-width:768px){
+    .mainContainer{
+        width: 85%;
+        flex-direction: column;
+        margin-left: 20%;
+        height: 123vh;
+    }
+    .container{
+        width: 65%;
+        padding: 0;
+        margin-left: -2%;
+    }
+    .wishlist{
+        width: 85%;
+        /* margin-left: -5px; */
+    }
+    .details{
+        width: 100%;
+        margin-top: 15%;
+    }
+    .bookdetail{
+        width: 100%;
+    }
+    .author{
+        margin-left: -5px;
+    }
+    .card-rating{
+        margin-left: -5px;
+        margin-top: 1%;
+        width: 48%;
+    }
+    .card-price{
+        margin-top: 1%;
+        width: 15%;
+    }
+    .horizoantalline{
+        margin-top: 5%;
+        width: 100%;
+        margin-left: -40%;
+    }
+    .desc-book{
+        margin-top: 4%;
+        margin-left: -39%;
+    }
+    .desc-title{
+        width: 18%;
+        margin-bottom: 3%;
+    }
+    .customer-feedback-container{
+        margin-left: 0;
+        margin-right: 32%;
+    }
+    .rating-stars-container{
+        margin-top: 2%;
+    }
+    .submit-button-container-feedback{
+        margin-left: 209px;
+    }
+    .textarea-actual-cutomerfeedback{
+        margin-top: 3%;
+    }
+    .feedback{
+        margin-left: 0;
+    }
 }

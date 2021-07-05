@@ -169,7 +169,7 @@ class BookDeatail extends Component {
                                 </div>
                                 <div className="card-rating">
                                     <div className="star">
-                                        <div className="number">4.5</div>
+                                        <div className="number">4.5 &#9733;</div>
                                         <div className="rating-star">
                                             <i class="zmdi zmdi-star"></i>
                                         </div>
