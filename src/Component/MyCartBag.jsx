@@ -209,7 +209,7 @@ class MyCartBag extends React.Component {
                     <div className="mycart"> My Cart({this.state._cartbooks.length})</div>
 
                     {this.state._cartbooks.map((val, index) => {
-                        return (<div className="part1">
+                        return (<><div className="part1">
                             <div className="container">  <div>
                                 <img src={Dont} alt="" />
                             </div>
@@ -224,11 +224,12 @@ class MyCartBag extends React.Component {
                                         <div className="remove" onClick={() => this.removeCartId(val._id)}>Remove</div>
 
                                     </div>
+                                    
                                 </div></div>
-                            {this.state._cartbooks.length - 1 === index
-                                ? this.state.show ? null : <Button variant="contained" color="primary" onClick={this.showCD}>
-                                    Place Order</Button> : null}
-                        </div>)
+                            
+                        </div>{this.state._cartbooks.length - 1 === index
+                                ? this.state.show ? null : <Button className="btn" variant="contained" color="primary" onClick={this.showCD}>
+                                    Place Order</Button> : null}</>)
 
                     })
                     }
@@ -320,7 +321,7 @@ class MyCartBag extends React.Component {
                     <div className="mycart"> Ordersummary</div>
                     {this.state.showOs ?
                         <> {this.state._cartbooks.map((val, index) => {
-                            return (<div className="part1">
+                            return (<><div className="part1">
                                 <div className="container">  <div>
                                     <img src={Dont} alt="" />
                                 </div>
@@ -330,10 +331,10 @@ class MyCartBag extends React.Component {
                                         <div className="price">Rs.{val.product_id.price*val.quantityToBuy}</div>
 
                                     </div></div>
-                                {this.state._cartbooks.length - 1 === index
-                                    ? <Button variant="contained" color="primary" onClick={this.order}>
-                                        CHECKOUT </Button> : null}
-                            </div>)
+                                
+                            </div>{this.state._cartbooks.length - 1 === index
+                                    ? <Button className="btn_check" variant="contained" color="primary" onClick={this.order}>
+                                        CHECKOUT </Button> : null}</>)
 
                         })
                         } </> : null}

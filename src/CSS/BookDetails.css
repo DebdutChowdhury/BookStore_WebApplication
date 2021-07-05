@@ -470,7 +470,72 @@
         margin-top: 3%;
     }
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) and (min-width:530px){
+    .mainContainer{
+        width: 85%;
+        flex-direction: column;
+        margin-left: 20%;
+        height: 123vh;
+    }
+    .container{
+        width: 65%;
+        padding: 0;
+        margin-left: -2%;
+    }
+    .wishlist{
+        width: 85%;
+        /* margin-left: -5px; */
+    }
+    .details{
+        width: 100%;
+        margin-top: 15%;
+    }
+    .bookdetail{
+        width: 100%;
+    }
+    .author{
+        margin-left: -5px;
+    }
+    .card-rating{
+        margin-left: -5px;
+        margin-top: 1%;
+        width: 48%;
+    }
+    .card-price{
+        margin-top: 1%;
+        width: 15%;
+    }
+    .horizoantalline{
+        margin-top: 5%;
+        width: 100%;
+        margin-left: -40%;
+    }
+    .desc-book{
+        margin-top: 4%;
+        margin-left: -39%;
+    }
+    .desc-title{
+        width: 18%;
+        margin-bottom: 3%;
+    }
+    .customer-feedback-container{
+        margin-left: 0;
+        margin-right: 32%;
+    }
+    .rating-stars-container{
+        margin-top: 2%;
+    }
+    .submit-button-container-feedback{
+        margin-left: 209px;
+    }
+    .textarea-actual-cutomerfeedback{
+        margin-top: 3%;
+    }
+    .feedback{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:1024px) and (min-width:768px){
     .mainContainer{
         width: 85%;
         flex-direction: column;

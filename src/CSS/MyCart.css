@@ -103,3 +103,36 @@
     background-color: #3371b5;
     color: white;
 }
+.btn{
+    margin-left: 73%;
+}
+.btn_check{
+    margin-left: 73%;
+}
+@media screen and (max-width:360px){
+    .cartcontent .mycart{
+        margin-top: 0;
+    }
+    .cartcontent{
+        width: 91%;
+        margin-left: 15px;
+    }
+    .cartcontent .box{
+        width: 100%;
+    }
+    .cartcontent .cartitems .part1 Button{
+        margin-top: 12%;
+
+    }
+    .btn{
+        margin-top: 5%;
+        margin-left: 41%;
+    }
+    .cartcontent .customerdetails .addressfield{
+        flex-direction: column;
+        width: 100%;
+    }
+    .btn_check{
+        margin-left: 52%;
+    }
+}
