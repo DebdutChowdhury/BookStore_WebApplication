@@ -37,13 +37,15 @@ export default class Header extends Component {
       <>
         <div className="appbar">
           <div>
-            <img src={Book} alt="" />
+            <Link to="/home"><img src={Book} alt="" /></Link>
+            {!this.props.headerTag && 
             <p className="book"><Link to="/home" style={{ listStyleType: "none", color: 'white', textDecoration: 'none' }}>Bookstore</Link></p>
+            }
 
-            <div className="input">
+            {this.props.value && <div className="input">
               <SearchOutlinedIcon className="searchicon" />
               <input type="text" placeholder="Search" onChange={this.sendSearchtext} />
-            </div>
+            </div>}
           </div>
           <div>
             <div className="pro" style={{cursor:"pointer"}} >
@@ -51,9 +53,9 @@ export default class Header extends Component {
               Profile
             </div>
             <div className="cart">
-              <Badge color="secondary" onClick={this.clickToOpenCart} badgeContent={this.props.getCartBook}>
+              <Link to="/cart"><Badge color="secondary"  badgeContent={this.props.getCartBook}>
                 <ShoppingCartOutlinedIcon className="carticon" />
-              </Badge>
+              </Badge></Link>
               Cart
             </div>
           </div>
@@ -62,3 +64,4 @@ export default class Header extends Component {
     )
   }
 }
+// onClick={this.clickToOpenCart}

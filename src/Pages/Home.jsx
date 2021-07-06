@@ -127,7 +127,7 @@ render() {
     return (
         <div>
         <Profiler id="header" onRender={this.filer}>
-            <Header searchData={this.searchData} openCart={this.openCart} getCartBook={this.state._cartbooks.length}/>
+            <Header headerTag={true} value={true} searchData={this.searchData} openCart={this.openCart} getCartBook={this.state._cartbooks.length}/>
         </Profiler>
             {/* {this.state.selectedBook ? <BookDetails displayBookDetails={this.state.selectedBook} />
                 : <BookDisplay

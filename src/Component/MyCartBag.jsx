@@ -227,9 +227,9 @@ class MyCartBag extends React.Component {
                                     
                                 </div></div>
                             
-                        </div>{this.state._cartbooks.length - 1 === index
-                                ? this.state.show ? null : <Button className="btn" variant="contained" color="primary" onClick={this.showCD}>
-                                    Place Order</Button> : null}</>)
+                        </div><div className="btn">{this.state._cartbooks.length - 1 === index
+                                ? this.state.show ? null : <Button  variant="contained" color="primary" onClick={this.showCD}>
+                                    Place Order</Button> : null}</div></>)
 
                     })
                     }
@@ -332,9 +332,9 @@ class MyCartBag extends React.Component {
 
                                     </div></div>
                                 
-                            </div>{this.state._cartbooks.length - 1 === index
-                                    ? <Button className="btn_check" variant="contained" color="primary" onClick={this.order}>
-                                        CHECKOUT </Button> : null}</>)
+                            </div><div className="btn_check">{this.state._cartbooks.length - 1 === index
+                                    ? <Button variant="contained" color="primary" onClick={this.order}>
+                                        CHECKOUT </Button> : null}</div></>)
 
                         })
                         } </> : null}

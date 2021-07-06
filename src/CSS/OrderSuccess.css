@@ -1,6 +1,6 @@
 .orderbody {
     width: max-width;
-    height: 70.2vh;
+    /* height: 70.2vh; */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -21,6 +21,7 @@
 }
 .orderbody .table {
     border: 1px solid grey;
+    margin-top: 1%;
 }
 .orderbody .table th {
     background-color: #dcdcdc;
@@ -35,4 +36,41 @@
 }
 .orderbody .MuiButton-fullWidth {
     width: 30% !important;
+    margin-top: 4%;
+}
+@media screen and (max-width:768px ) {
+    .orderbody .MuiButton-fullWidth {
+        width: 40% !important;
+        margin-top: 4%;
+    }
+}
+@media screen and (max-width:530px ){
+    .orderbody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 25%;
+        width: 69%;
+    }
+    .orderbody .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .orderbody .table{
+        margin-top: 9%;
+    }
+    .orderbody .MuiButton-fullWidth {
+        width: 74% !important;
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width:360px){
+    .orderbody .MuiButton-fullWidth{
+        width: 88% !important;
+        margin-top: 14%;
+    }
+    .table table{
+        width: auto;
+    }
 }

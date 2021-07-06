@@ -104,10 +104,14 @@
     color: white;
 }
 .btn{
-    margin-left: 73%;
+    /* margin-left: 73%; */
+    display: flex;
+    justify-content: flex-end;
 }
 .btn_check{
-    margin-left: 73%;
+    /* margin-left: 73%; */
+    display: flex;
+    justify-content: flex-end;
 }
 @media screen and (max-width:360px){
     .cartcontent .mycart{
@@ -126,13 +130,68 @@
     }
     .btn{
         margin-top: 5%;
-        margin-left: 41%;
+        /* margin-left: 41%; */
+        display: flex;
+        justify-content: flex-end;
     }
     .cartcontent .customerdetails .addressfield{
         flex-direction: column;
         width: 100%;
     }
     .btn_check{
-        margin-left: 52%;
+        /* margin-left: 52%; */
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+@media screen and (max-width:530px){
+    .cartcontent .mycart{
+        margin-top: 0;
+    }
+    .cartcontent{
+        width: 91%;
+        margin-left: 15px;
+    }
+    .cartcontent .box{
+        width: 100%;
+    }
+    .cartcontent .cartitems .part1 Button{
+        margin-top: 12%;
+    }
+    .btn{
+        /* margin-left: 64%; */
+        display: flex;
+        justify-content: flex-end;
+    }
+    .cartcontent .customerdetails .addressfield{
+        flex-direction: column;
+        width: 59%;
+    }
+    .btn_check{
+        /* margin-left: 71%; */
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+@media screen and (max-width:768px){
+    .cartcontent{
+        width: 91%;
+        margin-left: 15px;
+    }
+    .cartcontent .box{
+        width: 106%;
+    }
+    .cartcontent .cartitems .part1{
+        margin-left: 2%;
+    }
+    .btn_check{
+        /* margin-left: 82%; */
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+@media screen and (max-width:1024px){
+    .cartcontent .cartitems .part1{
+        margin-left: 3%;
     }
 }

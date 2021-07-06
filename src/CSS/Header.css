@@ -89,9 +89,9 @@
     .input input {
         width: 50%;
     }
-    .appbar .book{
+    /* .appbar .book{
         display: none;
-    }
+    } */
 }
 @media screen and (max-width: 530px){
     .appbar{
@@ -103,9 +103,9 @@
     .input input {
         width: 50%;
     }
-    .appbar .book{
+    /* .appbar .book{
         display: none;
-    }
+    } */
 }
 @media screen and (max-width: 768px){
   
