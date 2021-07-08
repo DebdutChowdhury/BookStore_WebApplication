@@ -1,8 +1,8 @@
 import './App.css';
 import Router from "./Router/Router"
 import { Provider } from 'react-redux'
-import Store from "./Store";
-import store from './Store';
+import Store from "./Redux/Store/Store";
+import store from "./Redux/Store/Store";
 
 store.subscribe(()=>console.log("see store",store.getState()))
 

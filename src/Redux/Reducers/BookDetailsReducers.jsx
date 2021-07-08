@@ -1,4 +1,4 @@
-import { BOOK_SELECTED, CART_BOOKS, CART_DETAILS, SEARCH_ICON} from "../Constants";
+import { BOOK_SELECTED, CART_BOOKS, CART_DETAILS, SEARCH_ICON} from "../Action/Constants";
 
 const initialState = {
     bookDetails: [],

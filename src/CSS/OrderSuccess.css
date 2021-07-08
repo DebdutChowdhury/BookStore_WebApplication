@@ -59,6 +59,7 @@
     }
     .orderbody .table{
         margin-top: 9%;
+        font-size: 17px;
     }
     .orderbody .MuiButton-fullWidth {
         width: 74% !important;
@@ -72,5 +73,9 @@
     }
     .table table{
         width: auto;
+    }
+    .orderbody .table{
+        margin-top: 9%;
+        font-size: 11px;
     }
 }

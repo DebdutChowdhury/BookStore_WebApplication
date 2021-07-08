@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware } from 'redux'
-import BookDetailsReducers from './Reducers/BookDetailsReducers'
+import BookDetailsReducers from '../Reducers/BookDetailsReducers'
 import logger from 'redux-logger'
 
 // Create a Redux store holding the state of your app.

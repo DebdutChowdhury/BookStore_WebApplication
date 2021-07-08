@@ -143,8 +143,14 @@
         display: flex;
         justify-content: flex-end;
     }
+    .cartcontent .cartitems .part1 .container{
+        margin-left: 0;
+    }
+    /* .address{
+        width: 100%;
+    } */
 }
-@media screen and (max-width:530px){
+@media screen and (min-width:361px) and (max-width:530px){
     .cartcontent .mycart{
         margin-top: 0;
     }
@@ -165,32 +171,37 @@
     }
     .cartcontent .customerdetails .addressfield{
         flex-direction: column;
-        width: 59%;
+        width: 100%;
     }
     .btn_check{
         /* margin-left: 71%; */
         display: flex;
         justify-content: flex-end;
     }
-}
-@media screen and (max-width:768px){
-    .cartcontent{
-        width: 91%;
-        margin-left: 15px;
+    .cartcontent .cartitems .part1 .container{
+        margin-left: 0;
     }
-    .cartcontent .box{
+}
+@media screen and (min-width:531px) and (max-width:768px){
+    .cartcontent{
+        /* width: 91%; */
+        margin-left: 11%;
+    }
+    /* .cartcontent .box{
         width: 106%;
     }
     .cartcontent .cartitems .part1{
         margin-left: 2%;
     }
     .btn_check{
-        /* margin-left: 82%; */
         display: flex;
         justify-content: flex-end;
+    } */
+    .cartcontent .cartitems .part1 .container{
+        margin-left: 0;
     }
 }
-@media screen and (max-width:1024px){
+@media screen and (min-width:769px) and (max-width:1024px){
     .cartcontent .cartitems .part1{
         margin-left: 3%;
     }

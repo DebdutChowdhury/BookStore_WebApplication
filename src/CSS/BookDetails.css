@@ -81,19 +81,24 @@
     color : #fff;
     background-color: brown;
     height : 130%;
-    width :44%;
+    width :93%;
     border-radius: 1px;
     cursor: pointer;
     margin-top: 40px;
 }
 .addOrRemove{
-    height : 80%;
-    width :40%;
-    border-radius: 5px;
+    background-color: blue;
+    width: 93%;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    text-align: center;
+    height: 130%;
+    margin-top: 18%;
+    color: #fff;
+    border : none;
+    outline: none;
+    border-radius: 1px;
 }
 .addbtn{
     width : 30%;
@@ -206,11 +211,6 @@
     margin-top: 8px;
 }
 
-.horizoantalline{
-    width : 100%;
-    height : fit-content;
-}
-
 .desc-book{
     width : 90%;
     height : 25%;
@@ -232,6 +232,7 @@
     align-items: center;
     justify-content: space-around;
     font-family: 'Roboto', sans-serif;
+    margin-top: 2%;
 }
 .dot {
     width : 7px;
@@ -245,10 +246,13 @@
     text-align: left;
     font-family: 'Roboto', sans-serif;
     color: grey;
+    margin-top: 2%;
 }
 .horizoantalline{
     width : 100%;
     height : fit-content;
+    margin-top: 3%;
+    margin-left: 3%;
 }
 .customer-feedback {
     width : 100%;
@@ -338,14 +342,18 @@
 
 @media screen and (max-width:360px){
     .mainContainer{
-        width: 100%;
+        /* width: 100%; */
         flex-direction: column;
-        margin-left: 27%;
+        margin-left: 14%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
     }
     .container{
-        width: 65%;
-        padding: 0;
-        margin-left: -2%;
+        width: 83%;
+        /* padding: 0; */
+        margin-left: 14%;
     }
     .twoimg-comtainer{
         display: none;
@@ -355,39 +363,44 @@
         margin-left: -5px;
     }
     .details{
-        width: 100%;
-        margin-top: 15%;
+        width: 91%;
+        margin-top: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .bookdetail{
+    /* .bookdetail{
         width: 100%;
-    }
+    } */
     .author{
         margin-left: -5px;
     }
     .card-rating{
         margin-left: -5px;
         margin-top: 1%;
-        width: 78%;
+        width: 136%;
     }
     .card-price{
-        margin-top: 1%;
+        /* margin-top: 1%; */
+        display: flex;
+        justify-content: flex-start;
     }
     .horizoantalline{
-        margin-left: -50%;
-        margin-top: 5%;
-        /* width: 104%; */
-        padding: 4%;
+        margin-top: 15%;
+        margin-left: 0%;
+        width: 128%;
     }
     .desc-book{
-        margin-top: 10%;
-        margin-left: -39%;
+        margin-top: 20%;
+        margin-left: -37%;
     }
     .desc-title{
-        width: 33%;
+        width: 50%;
         margin-bottom: 7%;
     }
     .lorem{
         margin-bottom: 7%;
+        width: 149%;
     }
     .customer-feedback-container{
         margin-left: 0;
@@ -403,16 +416,20 @@
         margin-top: 3%;
     }
 }
-@media screen and (max-width:530px){
+@media screen and (min-width:360px) and (max-width:530px){
     .mainContainer{
-        width: 100%;
+        /* width: 100%; */
         flex-direction: column;
-        margin-left: 27%;
+        margin-left: 14%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
     }
     .container{
-        width: 65%;
-        padding: 0;
-        margin-left: -2%;
+        width: 83%;
+        /* padding: 0; */
+        margin-left: 14%;
     }
     .twoimg-comtainer{
         display: none;
@@ -422,39 +439,44 @@
         margin-left: -5px;
     }
     .details{
-        width: 100%;
-        margin-top: 15%;
+        width: 91%;
+        margin-top: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .bookdetail{
+    /* .bookdetail{
         width: 100%;
-    }
+    } */
     .author{
         margin-left: -5px;
     }
     .card-rating{
         margin-left: -5px;
         margin-top: 1%;
-        width: 78%;
+        width: 136%;
     }
     .card-price{
-        margin-top: 1%;
+        /* margin-top: 1%; */
+        display: flex;
+        justify-content: flex-start;
     }
     .horizoantalline{
-        margin-left: -50%;
-        margin-top: 5%;
-        /* width: 104%; */
-        padding: 4%;
+        margin-top: 15%;
+        margin-left: 0%;
+        width: 128%;
     }
     .desc-book{
-        margin-top: 10%;
-        margin-left: -39%;
+        margin-top: 20%;
+        margin-left: -37%;
     }
     .desc-title{
-        width: 33%;
+        width: 50%;
         margin-bottom: 7%;
     }
     .lorem{
         margin-bottom: 7%;
+        width: 149%;
     }
     .customer-feedback-container{
         margin-left: 0;
@@ -463,14 +485,15 @@
     .rating-stars-container{
         margin-top: 2%;
     }
-    .submit-button-container-feedback{
+    /* .submit-button-container-feedback{
         margin-left: 209px;
-    }
+    } */
     .textarea-actual-cutomerfeedback{
         margin-top: 3%;
     }
 }
-@media screen and (max-width:768px) and (min-width:530px){
+
+@media screen and (min-width:531px) and (max-width:768px){
     .mainContainer{
         width: 85%;
         flex-direction: column;
@@ -506,13 +529,13 @@
         width: 15%;
     }
     .horizoantalline{
-        margin-top: 5%;
+        /* margin-top: 5%; */
         width: 100%;
-        margin-left: -40%;
+        margin-left: -18%;
     }
     .desc-book{
-        margin-top: 4%;
-        margin-left: -39%;
+        margin-top: 2%;
+        margin-left: -25%;
     }
     .desc-title{
         width: 18%;
@@ -520,13 +543,13 @@
     }
     .customer-feedback-container{
         margin-left: 0;
-        margin-right: 32%;
+        margin-right: 18%;
     }
     .rating-stars-container{
         margin-top: 2%;
     }
     .submit-button-container-feedback{
-        margin-left: 209px;
+        margin-left: 89%;
     }
     .textarea-actual-cutomerfeedback{
         margin-top: 3%;
@@ -534,16 +557,19 @@
     .feedback{
         margin-left: 0;
     }
+    .addOrRemove{
+        font-size: 18px;
+    }
 }
-@media screen and (max-width:1024px) and (min-width:768px){
+@media screen and (min-width:769px) and (max-width:1024px){
     .mainContainer{
-        width: 85%;
+        /* width: 85%; */
         flex-direction: column;
         margin-left: 20%;
         height: 123vh;
     }
     .container{
-        width: 65%;
+        width: 80%;
         padding: 0;
         margin-left: -2%;
     }
@@ -556,7 +582,8 @@
         margin-top: 15%;
     }
     .bookdetail{
-        width: 100%;
+        /* width: 100%; */
+        margin-left: -32%;
     }
     .author{
         margin-left: -5px;
@@ -573,7 +600,7 @@
     .horizoantalline{
         margin-top: 5%;
         width: 100%;
-        margin-left: -40%;
+        margin-left: -30%;
     }
     .desc-book{
         margin-top: 4%;
@@ -591,12 +618,15 @@
         margin-top: 2%;
     }
     .submit-button-container-feedback{
-        margin-left: 209px;
+        margin-left: 89%;
     }
     .textarea-actual-cutomerfeedback{
         margin-top: 3%;
     }
     .feedback{
         margin-left: 0;
+    }
+    .addOrRemove{
+        font-size: 22px;
     }
 }

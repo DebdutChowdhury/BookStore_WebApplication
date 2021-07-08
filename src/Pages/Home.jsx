@@ -7,7 +7,7 @@ import MyCartBag from '../Component/MyCartBag';
 import { withRouter } from 'react-router';
 import BookServices from '../Services/BookService';
 import { connect } from 'react-redux';
-import { BOOK_SELECTED, CART_BOOKS, CART_DETAILS } from '../Constants';
+import { BOOK_SELECTED, CART_BOOKS, CART_DETAILS } from '../Redux/Action/Constants';
 import { TimerSharp } from '@material-ui/icons';
 
 const mapStateToProps = (state) => {

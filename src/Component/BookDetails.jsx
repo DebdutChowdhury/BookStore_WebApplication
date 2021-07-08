@@ -109,7 +109,7 @@ class BookDeatail extends Component {
                 >
                   <CircularProgress color="inherit" />
                 </Backdrop>:<>
-                <Header getCartBook={this.props.cartCount} />
+                <Header headerTag={true} getCartBook={this.props.cartCount} />
                 <div className="mainContainer">
                     <div className="container">
                         <div className="imgs-container">
@@ -132,23 +132,13 @@ class BookDeatail extends Component {
                                 >
                                     Add To Bag
                                 </button> : <><div className="addOrRemove">
-                                        <AddCircleOutlineTwoToneIcon style={{ opacity: 0.4 }} 
-                                        // onClick={() => this.increment(val._id, val.quantityToBuy)} 
-
-                                        />
-                                        <div className="quantity">
-                                        {/* {val.quantityToBuy} */}
-                                        </div>
-                                        <RemoveCircleOutlineTwoToneIcon style={{ opacity: 0.4 }} 
-                                        // onClick={() => this.decrement(val._id, val.quantityToBuy)} 
-
-                                        />
+                                        Added To Bag
                                     </div></>
                                     }
-                                <button className="addwishlist">
+                                {/* <button className="addwishlist">
 
                                     <i class="zmdi zmdi-favorite"></i> <span>WishList</span>
-                                </button>
+                                </button> */}
                             </div>
                         {/* }) */}
                         {/* } */}

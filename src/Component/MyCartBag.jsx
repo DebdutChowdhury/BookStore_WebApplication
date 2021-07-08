@@ -284,7 +284,8 @@ class MyCartBag extends React.Component {
                                 label="address"
                                 variant="outlined"
                                 name="address"
-                                fullWidth className="address"
+                                // fullWidth 
+                                className="address"
                                 margin="dense"
                                 onChange={this.changeStates}
                                 onChange={(e) => this.changeState(e)}
@@ -318,7 +319,7 @@ class MyCartBag extends React.Component {
                         : null}</div>
 
                 <div className="cartitems box">
-                    <div className="mycart"> Ordersummary</div>
+                    <div className="mycart"> Order Summary</div>
                     {this.state.showOs ?
                         <> {this.state._cartbooks.map((val, index) => {
                             return (<><div className="part1">

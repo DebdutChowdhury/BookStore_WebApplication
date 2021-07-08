@@ -45,10 +45,10 @@ export default function SimplePopper() {
             <MarkunreadMailboxOutlinedIcon style={{fontSize:"15", color:"gray"}} />
             <p>My orders</p>
           </div>
-          <div className="profwish">
+          {/* <div className="profwish">
             <FavoriteBorderOutlinedIcon style={{fontSize:"15", color:"gray"}} />
             <p>Wishlist</p>
-          </div>
+          </div> */}
         </div>
       </Popper>
     </>
