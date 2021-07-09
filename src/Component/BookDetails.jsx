@@ -36,7 +36,8 @@ class BookDeatail extends Component {
             inputQuantity: true,
             getCart: [],
             cartId:"",
-            loader:false
+            loader:false,
+            cartCount:this.props.cartCount
         }
     }
 
@@ -62,6 +63,10 @@ class BookDeatail extends Component {
             console.log(res);
             this.setState({cartId:value._id})
             console.log("cartId",this.state.cartId);
+            // for batch update after click cart
+            let count = this.state.cartCount + 1
+            this.setState({cartCount:count})   
+            console.log(this.state.cartCount);         
             this.handleClose()
         })
             .catch((err) => {
@@ -109,7 +114,7 @@ class BookDeatail extends Component {
                 >
                   <CircularProgress color="inherit" />
                 </Backdrop>:<>
-                <Header headerTag={true} getCartBook={this.props.cartCount} />
+                <Header headerTag={false} getCartBook={this.state.cartCount} />
                 <div className="mainContainer">
                     <div className="container">
                         <div className="imgs-container">

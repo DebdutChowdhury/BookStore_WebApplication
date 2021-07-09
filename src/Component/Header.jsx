@@ -38,14 +38,14 @@ export default class Header extends Component {
         <div className="appbar">
           <div>
             <Link to="/home"><img src={Book} alt="" /></Link>
-            {this.props.headerTag && 
+            {!this.props.headerTag && 
             <p className="book"><Link to="/home" style={{ listStyleType: "none", color: 'white', textDecoration: 'none' }}>Bookstore</Link></p>
             }
 
-            {this.props.value && <div className="input">
+            {this.props.value && <><p className="book"><Link to="/home" style={{ listStyleType: "none", color: 'white', textDecoration: 'none' }}>Bookstore</Link></p> <div className="input">
               <SearchOutlinedIcon className="searchicon" />
               <input type="text" placeholder="Search" onChange={this.sendSearchtext} />
-            </div>}
+            </div></>}
           </div>
           <div>
             <div className="pro" style={{cursor:"pointer"}} >
