@@ -85,6 +85,7 @@
     border-radius: 1px;
     cursor: pointer;
     margin-top: 40px;
+    font-size: 18px;
 }
 .addOrRemove{
     background-color: blue;
@@ -94,11 +95,12 @@
     align-items: center;
     text-align: center;
     height: 130%;
-    margin-top: 18%;
+    margin-top: 14%;
     color: #fff;
     border : none;
     outline: none;
     border-radius: 1px;
+    font-size: 18px;
 }
 .addbtn{
     width : 30%;
@@ -386,12 +388,15 @@
         justify-content: flex-start;
     }
     .horizoantalline{
-        margin-top: 15%;
+        /* margin-top: 15%;
+        margin-left: 0%;
+        width: 128%; */
+        margin-top: 20%;
         margin-left: 0%;
         width: 128%;
     }
     .desc-book{
-        margin-top: 20%;
+        margin-top: 26%;
         margin-left: -37%;
     }
     .desc-title{
@@ -462,12 +467,15 @@
         justify-content: flex-start;
     }
     .horizoantalline{
-        margin-top: 15%;
+        /* margin-top: 15%;
+        margin-left: 0%;
+        width: 128%; */
+        margin-top: 20%;
         margin-left: 0%;
         width: 128%;
     }
     .desc-book{
-        margin-top: 20%;
+        margin-top: 26%;
         margin-left: -37%;
     }
     .desc-title{

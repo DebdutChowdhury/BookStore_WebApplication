@@ -38,13 +38,13 @@ export default function SimplePopper() {
           <div className="profmaindiv">
             Welcome
             <p>To access account and manage orders</p>
-            <button className="profbtn" onClick={signOut}>LOGIN/SIGNUP</button>
+            <button className="profbtn" onClick={signOut}>LOGOUT</button>
           </div>
-          <div className="horizoantalline"><hr/></div>
-          <div className="profstore">
+          {/* <div className="horizoantalline"><hr/></div> */}
+          {/* <div className="profstore">
             <MarkunreadMailboxOutlinedIcon style={{fontSize:"15", color:"gray"}} />
             <p>My orders</p>
-          </div>
+          </div> */}
           {/* <div className="profwish">
             <FavoriteBorderOutlinedIcon style={{fontSize:"15", color:"gray"}} />
             <p>Wishlist</p>

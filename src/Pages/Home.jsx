@@ -7,7 +7,7 @@ import MyCartBag from '../Component/MyCartBag';
 import { withRouter } from 'react-router';
 import BookServices from '../Services/BookService';
 import { connect } from 'react-redux';
-import { BOOK_SELECTED, CART_BOOKS, CART_DETAILS } from '../Redux/Action/Constants';
+import { BOOK_SELECTED, CART_BOOKS, CART_DETAILS, CART_BOOKS_LIST } from '../Redux/Action/Constants';
 import { TimerSharp } from '@material-ui/icons';
 
 const mapStateToProps = (state) => {
@@ -15,7 +15,8 @@ const mapStateToProps = (state) => {
     return {
         selectedBook:state.state.bookDetails,
         cartCount:state.state.cartCount,
-        cartOpen:state.state.cartOpen
+        cartOpen:state.state.cartOpen,
+        cartBookList:state.cartBookList
     }
 }
 
@@ -39,7 +40,8 @@ class Home extends Component {
             _cartbooks:[],
             filterData: [],
             cartCount:0,
-            search:false
+            search:false,
+            cartBookList:[]
         }
     }
 
@@ -103,6 +105,7 @@ class Home extends Component {
     getCartBook = () => {
         service.getCartItems().then((res) => {
             this.setState({ _cartbooks: res.data.result });
+            this.props.dispatch({type:CART_BOOKS_LIST, value:res.data.result})
             this.props.dispatch({type:CART_BOOKS, value:res.data.result.length})
             console.log(res.data.result);
         })
@@ -123,7 +126,9 @@ class Home extends Component {
     }
 
 render() {
-    // console.log(this.state.newSearchData);
+    {this.state._cartbooks.map((value) => {
+        console.log("value",value.product_id.bookName);
+    })}
     return (
         <div>
         <Profiler id="header" onRender={this.filer}>
