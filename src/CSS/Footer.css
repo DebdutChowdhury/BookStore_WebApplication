@@ -6,7 +6,7 @@
     width: 100%;
     height: 40px;
     background-color: black;
-    margin-top: 7%;
+    margin-top: 13%;
 }
 
 .footer p {
@@ -16,11 +16,6 @@
     opacity: 1;
 }
 
-/* @media screen and (max-width:360px){
-    .footer{
-
-    }
-} */
 
 /* https://xd.adobe.com/view/d096df37-ca37-4026-553f-8cfa6bec09ec-a6a7/grid */
 /* https://new-bookstore-backend.herokuapp.com/bookstore_app/swagger/api/#/ */

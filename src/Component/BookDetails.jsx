@@ -11,6 +11,7 @@ import RemoveCircleOutlineTwoToneIcon from '@material-ui/icons/RemoveCircleOutli
 import CustomerFeedback from "./CustomerFeedback";
 import { connect } from 'react-redux';
 import Header from "./Header";
+import Footer from "./Footer"
 
 const mapStateToProps = (state) => {
     console.log("state", state.cartOpen);
@@ -44,17 +45,16 @@ class BookDeatail extends Component {
     }
 
     componentDidMount() {
+        this.getCartBooks()
+    }
+
+    getCartBooks = () => {
+        this.handleToggle()
         service.getCartItems().then((res) => {
             console.log("getCart", res);
-            // if(this.state.cartId === res.data.result.product_id._id){
             this.setState({ getCart: res.data.result });
-            // }
-            // this.state.getCart.map((value) => {
-            //     if (this.props.selectedBook == value.product_id.bookName) {
-            //         this.setState({ cartBag: true })
-            //     }
-            // })
             console.log("getCartdata", this.state.getCart);
+            this.handleClose()
         })
     }
 
@@ -68,6 +68,7 @@ class BookDeatail extends Component {
         service.addToCartBook(data, value._id, token).then((res) => {
             console.log(value);
             console.log(res);
+            this.getCartBooks()
             this.setState({ cartId: value._id })
             console.log("cartId", this.state.cartId);
             // for batch update after click cart
@@ -162,15 +163,12 @@ class BookDeatail extends Component {
                                 <div className="wishlist">
                                     {this.allCartBooks(this.props.selectedBook._id) ? <><div className="addOrRemove">
                                         Added To Bag
-                                    </div></> : <>{this.state.inputQuantity ? <button
+                                    </div></> : <button
                                         className="addtobag"
                                         onClick={() => this.addedtoCart(this.props.selectedBook)}
                                     >
                                         Add To Bag
-                                    </button> : <><div className="addOrRemove">
-                                        Added To Bag
-                                    </div></>
-                                    }</>
+                                    </button> 
                                     }
 
                                 </div>
@@ -242,6 +240,7 @@ class BookDeatail extends Component {
                                 </div> */}
                             </div>
                         </div>
+                        <Footer/>
                     </>
                 }
             </>

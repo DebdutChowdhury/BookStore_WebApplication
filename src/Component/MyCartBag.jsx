@@ -221,7 +221,7 @@ class MyCartBag extends React.Component {
                                         <AddCircleOutlineTwoToneIcon style={{ opacity: 0.4 }} onClick={() => this.increment(val._id, val.quantityToBuy)} />
                                         <div className="quantity">{val.quantityToBuy}</div>
                                         <RemoveCircleOutlineTwoToneIcon style={{ opacity: 0.4 }} onClick={() => this.decrement(val._id, val.quantityToBuy)} />
-                                        <div className="remove" onClick={() => this.removeCartId(val._id)}>Remove</div>
+                                        {this.state.show === false ? <div className="remove" onClick={() => this.removeCartId(val._id)}>Remove</div>: <></>}
 
                                     </div>
                                     
