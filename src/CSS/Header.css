@@ -9,11 +9,13 @@
     background-color: #a03037;
     box-shadow: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .appbar div {
     display: flex;
+    /* padding: 0 25px; */
+    margin-left: 8%;
 }
 .appbar div img {
     width: 30px;
@@ -21,12 +23,13 @@
 }
 .appbar div p {
     color: white;
-    padding-left: 5px;
+    /* padding-left: 5px; */
     font-size: 20px;
     width: auto;
+    margin-left: 3%;
 }
 .appbar .input {
-    width: 400px;
+    width: 437px;
     height: 29px;
     border-radius: 3px;
     align-content: center;
@@ -47,14 +50,13 @@
     border-radius: 3px;
     border: none;
 }
-.appbar div {
-    padding: 0 25px;
-}
+
 .appbar div .pro {
     color: white;
     display: flex;
     flex-direction: column;
     width: auto;
+    margin-left: -158%;
 }
 .appbar div .pro .proicon {
     color: white;
@@ -66,9 +68,11 @@
     display: flex;
     flex-direction: column;
     width: auto;
+    margin-left: 26%;
 }
 .appbar div .cart .carticon {
     color: white;
+    margin-left: 4px;
 }
 .proicon {
     margin-right: 2px;
@@ -82,6 +86,8 @@
 @media screen and (max-width: 360px){
    .appbar{
        width: 100%;
+       display: flex;
+       justify-content: space-between;
    }
     .appbar div{
         padding: 12px;
@@ -92,8 +98,21 @@
     .appbar .book{
         display: none;
     }
+    .appbar div .pro {
+        margin-left: -39px;
+    }
+    .appbar div .cart {
+        margin-left: 1%;
+    }
+    .appbar div img{
+        margin-left: -50%;
+    }
+    .appbar .input {
+        width: auto;
+        margin-left: 1%;
+    }
 }
-@media screen and (max-width: 530px){
+/* @media screen and (max-width: 361px) and (max-width: 530px){
     .appbar{
         width: 100%;
     }
@@ -106,8 +125,8 @@
     .appbar .book{
         display: none;
     }
-}
-@media screen and (max-width: 768px){
+} */
+@media screen and (max-width: 531px) and (max-width: 768px){
   
     .appbar .input{
         width: auto;
